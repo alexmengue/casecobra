@@ -1,4 +1,5 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { Check } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -20,6 +21,25 @@ export default function Home() {
                 Capture your favorite memories with your own, {''} <span className="font-semibold">one-of-one</span> phone case.
                 CaseCobra allows you do protect your memories, not just your phone case.
               </p>
+
+              <ul className="mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start">
+                <div className="space-y-2">
+                  <li className="flex gap-15 items-center text-left">
+                    <Check className="h-5 ww-5 shrink-0 text-green-600"/>
+                    High-quality, durable material
+                  </li>
+
+                  <li className="flex gap-15 items-center text-left">
+                    <Check className="h-5 ww-5 shrink-0 text-green-600"/>
+                    5 years print guarantee
+                  </li>
+
+                  <li className="flex gap-15 items-center text-left">
+                    <Check className="h-5 ww-5 shrink-0 text-green-600"/>
+                    Modern iPhone models supported
+                  </li>
+                </div>
+              </ul>
             </div>
           </div>
         </MaxWidthWrapper>
