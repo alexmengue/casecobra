@@ -12,7 +12,15 @@ const Navbar = () => {
         </Link>
 
         <div className="h-full flex items-center space-x-4">
-          {user ? () : ()}
+          {user ? (
+            <>
+              <Link className={buttonVariants({
+                size: 'sm', variant: 'ghost'
+              })} href="/api/auth/logout"></Link>
+            </>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
     </MaxWidthWrapper>
