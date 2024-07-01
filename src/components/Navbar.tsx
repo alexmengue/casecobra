@@ -15,8 +15,18 @@ const Navbar = () => {
           {user ? (
             <>
               <Link className={buttonVariants({
-                size: 'sm', variant: 'ghost'
-              })} href="/api/auth/logout"></Link>
+                size: 'sm',
+                variant: 'ghost'
+              })} href="/api/auth/logout">
+                Sign out
+              </Link>
+
+              {isAdmin ? <Link className={buttonVariants({
+                  size: 'sm',
+                  variant: 'ghost'
+                })} href="/api/auth/logout">
+                  Sign out
+                </Link> : null}
             </>
           ) : (
             <></>
