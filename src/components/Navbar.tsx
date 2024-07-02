@@ -3,6 +3,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   const user = undefined;
+  const isAdmin = false;
 
  return <nav className="sticky z-[100] h-14 inset-x-0 top-0 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
     <MaxWidthWrapper>
@@ -21,12 +22,20 @@ const Navbar = () => {
                 Sign out
               </Link>
 
-              {isAdmin ? <Link className={buttonVariants({
+              {isAdmin ? (<Link className={buttonVariants({
                   size: 'sm',
                   variant: 'ghost'
                 })} href="/api/auth/logout">
-                  Sign out
-                </Link> : null}
+                  Dashboard ✨
+                </Link>) : null}
+
+                <Link className={buttonVariants({
+                  size: 'sm',
+                  variant: 'ghost'
+                })} href="/configure/upload">
+                  Create case
+                  
+                </Link>
             </>
           ) : (
             <></>
