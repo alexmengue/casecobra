@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Link from "next/link";
 
@@ -34,7 +35,7 @@ const Navbar = () => {
                   variant: 'ghost'
                 })} href="/configure/upload">
                   Create case
-                  
+                  <ArrowRight className="ml-1.5 h-5 w-5" />
                 </Link>
             </>
           ) : (
