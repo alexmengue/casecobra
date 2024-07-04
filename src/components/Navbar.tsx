@@ -32,7 +32,7 @@ const Navbar = () => {
 
                 <Link className={buttonVariants({
                   size: 'sm',
-                  variant: 'ghost'
+                  className: "hidden sm:flex items-center gap-1",
                 })} href="/configure/upload">
                   Create case
                   <ArrowRight className="ml-1.5 h-5 w-5" />
