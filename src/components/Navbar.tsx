@@ -39,7 +39,22 @@ const Navbar = () => {
                 </Link>
             </>
           ) : (
-            <></>
+            <>
+              <Link className={buttonVariants({
+                size: 'sm',
+                variant: 'ghost'
+              })} href="/api/auth/register">
+                Sign up
+              </Link>
+
+              <Link className={buttonVariants({
+                size: 'sm',
+                variant: 'ghost'
+              })} href="/api/auth/login">
+                Login
+                <ArrowRight className="ml-1.5 h-5 w-5" />
+              </Link>
+            </>
           )}
         </div>
       </div>
