@@ -52,8 +52,17 @@ const Navbar = () => {
                 variant: 'ghost'
               })} href="/api/auth/login">
                 Login
-                <ArrowRight className="ml-1.5 h-5 w-5" />
               </Link>
+
+              <div className="h-8 w-px bg-zinc-200 hidden sm:block" />
+
+              <Link className={buttonVariants({
+                  size: 'sm',
+                  className: "hidden sm:flex items-center gap-1",
+                })} href="/configure/upload">
+                  Create case
+                  <ArrowRight className="ml-1.5 h-5 w-5" />
+                </Link>
             </>
           )}
         </div>
